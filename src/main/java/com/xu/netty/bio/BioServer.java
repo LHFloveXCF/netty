@@ -9,6 +9,8 @@ import java.util.concurrent.Executors;
 
 /**
  * netty
+ *
+ * @author little_kid
  */
 public class BioServer {
     public static void main(String[] args) throws IOException {
@@ -35,7 +37,7 @@ public class BioServer {
                 System.out.println("read---------");
                 int read = inputStream.read(bytes);
                 if (read != -1) {
-                    System.out.println(new String(bytes, 0 , read));
+                    System.out.println(new String(bytes, 0, read));
                 } else {
                     break;
                 }
